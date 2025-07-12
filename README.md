@@ -5,6 +5,9 @@
 
 A backend system for managing books, authors, and users. Built with FastAPI, async SQLAlchemy, Alembic, and PostgreSQL. Includes JWT authentication, user roles, import/export functionality, and rate limiting.
 
+## warning (ability to make chenges)
+some endpoints (only connected with yourself) can work withput superuser, you can get it and test evethyng with is_superuser = true
+
 ## Requirements
 
 - Python 3.11+
