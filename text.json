@@ -1,0 +1,32 @@
+[
+  {
+    "title": "1984",
+    "genre": "Fiction",
+    "published_year": 1949,
+    "author_id": 1
+  },
+  {
+    "title": "Sapiens: A Brief History of Humankind",
+    "genre": "Nonfiction",
+    "published_year": 2011,
+    "author_id": 2
+  },
+  {
+    "title": "A Brief History of Time",
+    "genre": "Science",
+    "published_year": 1988,
+    "author_id": 3
+  },
+  {
+    "title": "The Selfish Gene",
+    "genre": "Science",
+    "published_year": 1976,
+    "author_id": 2
+  },
+  {
+    "title": "To Kill a Mockingbird",
+    "genre": "Fiction",
+    "published_year": 1960,
+    "author_id": 2
+  }
+]

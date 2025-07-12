@@ -1,0 +1,29 @@
+fastapi==0.110.1
+uvicorn[standard]==0.29.0
+
+# База даних
+sqlalchemy==2.0.30
+asyncpg==0.29.0
+psycopg2-binary==2.9.9
+
+# Міграції
+alembic==1.13.1
+
+# Валідація та схеми
+pydantic==2.7.1
+pydantic-settings==2.2.1
+
+# Авторизація
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+
+# Імпорт/експорт
+pandas==2.2.2
+python-multipart==0.0.9  # для завантаження файлів
+
+# Тестування
+pytest==8.2.2
+httpx==0.27.0
+
+# CORS (якщо буде фронт)
+fastapi[all]==0.110.1
