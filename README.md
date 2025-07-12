@@ -1,0 +1,128 @@
+Ось англомовна версія `README.md` для репозиторію **Book Manager System**, оформлена чітко за структурою проєкту:
+
+---
+
+````markdown
+# Book Manager System
+
+A backend system for managing books, authors, and users. Built with FastAPI, async SQLAlchemy, Alembic, and PostgreSQL. Includes JWT authentication, user roles, import/export functionality, and rate limiting.
+
+## Requirements
+
+- Python 3.11+
+- PostgreSQL
+- pip or poetry
+- Docker (optional for running PostgreSQL)
+
+## Setup
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Ivan2330/Book-manager-system.git
+cd Book-manager-system
+````
+
+### 2. Create and activate virtual environment
+
+```bash
+python -m venv venv
+source venv/bin/activate      # On Windows: .\venv\Scripts\activate
+```
+
+### 3. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+## Environment Configuration
+
+Create a `.env` file in the root directory:
+
+```
+database_url=""
+secret_key=your key
+expire_token_minutes=120
+algorithm=HS256
+```
+
+Replace `your_secret_key_here` with a secure random string and add your postgers url.
+
+
+## Database Migrations
+
+### 1. (Optional) Initialize Alembic (already done)
+
+```bash
+alembic init migrations
+```
+
+### 2. Generate migrations
+
+```bash
+alembic revision --autogenerate -m "initial"
+```
+
+### 3. Apply migrations
+
+```bash
+alembic upgrade head
+```
+
+## Run the application
+
+```bash
+uvicorn app.main:app --reload
+```
+
+Visit: [http://localhost:8000](http://localhost:8000)
+
+## Features
+
+* JWT authentication with FastAPI Users
+* Book management:
+
+  * CRUD operations
+  * Filtering, sorting, pagination
+  * Random recommendations
+  * Import/export (CSV and JSON)
+* Author management
+* User management and updates
+* Rate limiting via `slowapi`
+
+## Available Endpoints (examples)
+
+* `POST /auth/jwt/login` — login
+* `POST /auth/register` — register
+* `GET /books/` — list books with filters
+* `GET /books/recommend` — get random recommendations
+* `GET /books/export?format=json|csv` — export books
+* `POST /books/import` — import books
+* `GET /authors/` — list authors
+* `GET /users/` — list users
+* `PATCH /users/make-me-superuser` — promote to superuser
+
+## Test User
+
+You can promote any user to superuser with:
+
+```http
+PATCH /users/make-me-superuser
+```
+
+## Run Tests
+
+'''bash
+pytest app/tests
+'''
+## License
+
+MIT
+
+```
+
+---
+
+Хочеш — можу додати окремий розділ з прикладами `curl` або `.http`-файл для швидкої перевірки всіх запитів.
+```
