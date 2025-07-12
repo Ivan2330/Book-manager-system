@@ -7,6 +7,9 @@ A backend system for managing books, authors, and users. Built with FastAPI, asy
 
 ## warning (ability to make chenges)
 some endpoints (only connected with yourself) can work withput superuser, you can get it and test evethyng with is_superuser = true
+```http
+PATCH /users/make-me-superuser
+```
 
 ## Requirements
 
@@ -114,7 +117,7 @@ PATCH /users/make-me-superuser
 
 ## Run Tests
 
-'''bash
+```bash
 pytest app/tests
-'''
+```
 
