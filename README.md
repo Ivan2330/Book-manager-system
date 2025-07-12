@@ -114,13 +114,4 @@ PATCH /users/make-me-superuser
 '''bash
 pytest app/tests
 '''
-## License
 
-MIT
-
-```
-
----
-
-Хочеш — можу додати окремий розділ з прикладами `curl` або `.http`-файл для швидкої перевірки всіх запитів.
-```
