@@ -1,8 +1,6 @@
-Ось англомовна версія `README.md` для репозиторію **Book Manager System**, оформлена чітко за структурою проєкту:
-
 ---
 
-````markdown
+
 # Book Manager System
 
 A backend system for managing books, authors, and users. Built with FastAPI, async SQLAlchemy, Alembic, and PostgreSQL. Includes JWT authentication, user roles, import/export functionality, and rate limiting.
