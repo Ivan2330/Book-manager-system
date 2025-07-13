@@ -56,19 +56,7 @@ Replace `your_secret_key_here` with a secure random string and add your postgers
 
 ## Database Migrations
 
-### 1. (Optional) Initialize Alembic (already done)
-
-```bash
-alembic init migrations
-```
-
-### 2. Generate migrations
-
-```bash
-alembic revision --autogenerate -m "initial"
-```
-
-### 3. Apply migrations
+### Apply migrations
 
 ```bash
 alembic upgrade head
@@ -80,7 +68,7 @@ alembic upgrade head
 uvicorn app.main:app --reload
 ```
 
-Visit: [http://localhost:8000](http://localhost:8000)
+Visit Swagger: [http://localhost:8000](http://localhost:8000/docs)
 
 ## Features
 
