@@ -18,7 +18,7 @@ pydantic==2.7.1
 pydantic-settings==2.2.1
 
 # File uploads & import/export
-python-multipart==0.0.9
+python-multipart==0.0.20
 pandas==2.2.2
 
 # Rate limiting
